@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { View, TextInput, Text, TouchableOpacity, Alert, } from 'react-native';
+import { View, TextInput, Text, TouchableOpacity, Alert, Image } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import styles from './styles';
 import { useState } from 'react';
@@ -18,6 +18,10 @@ export function LoginPage (props: LoginPageProps) {
         <View style={styles.principal_container}>
 
             <View style={styles.components}>
+
+                <View style={styles.image_view}>
+                    <Image source={require('./images/logo.png')} style={styles.image_logo}/>
+                </View>
 
                 <TextInput style={styles.login} placeholder='Usuário'/>
                 <View style={styles.security_row}>

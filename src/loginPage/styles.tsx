@@ -2,18 +2,36 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
     principal_container: {
-        backgroundColor: "#1E90FF",
+        backgroundColor: "white",
         height: "100%",
         width: "100%",
         alignItems: "center",
         justifyContent: "center"
     },
     components: {
-        backgroundColor: "grey",
+        backgroundColor: "#1E90FF",
         height: 600,
         width: 370,
         justifyContent: 'center',
+        borderRadius: 15
     },
+
+    image_view: {
+        backgroundColor: "white",
+        height: 120,
+        width: 120,
+        marginLeft: 125,
+        alignItems: "center",
+        marginTop: 0,
+        borderRadius: 65
+    },
+
+    image_logo:{
+        height: 135,
+        width: 135,
+        margin: 0
+    },
+
     login: {
         backgroundColor: "white",
         margin: 10,
@@ -53,7 +71,7 @@ const styles = StyleSheet.create({
         backgroundColor: "white"
     },
     enter_button: {
-        backgroundColor: "#1E90FF",
+        backgroundColor: "white",
         textAlign: "center",
         alignItems: "center",
         width: "50%",
@@ -63,7 +81,7 @@ const styles = StyleSheet.create({
         padding: 4
     },
     text_button: {
-        color: "white",
+        color: "black",
         fontWeight: "bold",
     }
 
