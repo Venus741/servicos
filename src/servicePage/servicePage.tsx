@@ -27,13 +27,13 @@ export function ServicePage (props: ServicePageProps) {
         "alarme"
     ];
 
-    const [selectedServices, setSelectedServices] = useState([]);
+    const [selectedServices, setSelectedServices] = useState<String[]>([]);
 
-    const handleCheckBoxClick = (service, newValue) => {
+    const handleCheckBoxClick = (service: String, newValue: boolean) => {
         if (newValue) {
-            setSelectedServices([...selectedServices, service]);
+            setSelectedServices(prevSelected => [...prevSelected, service]);
         } else {
-        setSelectedServices(selectedServices.filter(item => item !== service));
+            setSelectedServices(prevSelected => prevSelected.filter(item => item !== service));
         }
     };
 
