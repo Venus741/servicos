@@ -1,18 +1,21 @@
 import * as React from 'react';
 import { Image, View, Text, Alert, TouchableHighlight, ScrollView } from 'react-native';
 import styles from './styles';
+import { router } from 'expo-router';
 
 export interface HomePageProps {
 }
 
-export function HomePage (props: HomePageProps) {
+export default function HomePage (props: HomePageProps) {
+    
+
     return (
       <View style={styles.container}>
         <View style={styles.appBar}>
 
             <Image source={require('./image/userImg.png')} style={styles.userIcon}/>
 
-            <Text style={styles.userName}>Olá, cliente </Text>
+            <Text style={styles.userName}>Olá, seja bem-vindo</Text>
         </View>
         <View style={styles.options_service}>
 
@@ -23,13 +26,13 @@ export function HomePage (props: HomePageProps) {
             <ScrollView style={styles.list_buttons}>
               
               <View style={styles.row}>
-                <TouchableHighlight style={styles.button1} onPress={() => Alert.alert("Botão acionado")}>
+                <TouchableHighlight style={styles.button1} onPress={() => {router.push('/tela3/')}}>
                   <View>
                    <Text style={styles.TextButtons}>RESIDÊNCIA</Text>
                   </View>
                 </TouchableHighlight>
 
-                <TouchableHighlight style={styles.button1} onPress={() => Alert.alert("Botão acionado")}>
+                <TouchableHighlight style={styles.button1} onPress={() => {router.push('/tela3/')}}>
                   <View>
                     <Text style={styles.TextButtons}>CLÍNICA</Text>
                   </View>
@@ -37,13 +40,13 @@ export function HomePage (props: HomePageProps) {
               </View>
 
               <View style={styles.row}>
-                <TouchableHighlight style={styles.button1} onPress={() => Alert.alert("Botão acionado")}>
+                <TouchableHighlight style={styles.button1} onPress={() => {router.push('/tela3/')}}>
                   <View>
                     <Text style={styles.TextButtons}>GALPÃO</Text>
                   </View>
                 </TouchableHighlight>
               
-                <TouchableHighlight style={styles.button1} onPress={() => Alert.alert("Botão acionado")}>
+                <TouchableHighlight style={styles.button1} onPress={() => {router.push('/tela3/')}}>
                   <View>
                    <Text style={styles.TextButtons}>RESTAURANTE</Text>
                   </View>
@@ -51,13 +54,13 @@ export function HomePage (props: HomePageProps) {
               </View>
 
               <View style={styles.row}>
-                <TouchableHighlight style={styles.button1} onPress={() => Alert.alert("Botão acionado")}>
+                <TouchableHighlight style={styles.button1} onPress={() => {router.push('/tela3/')}}>
                   <View>
                     <Text style={styles.TextButtons}>COMÉRCIO</Text>
                   </View>
                 </TouchableHighlight>
 
-                <TouchableHighlight style={styles.button1} onPress={() => Alert.alert("Botão acionado")}>
+                <TouchableHighlight style={styles.button1} onPress={() => {router.push('/tela3/')}}>
                   <View>
                     <Text style={styles.TextButtons}>INST. DE ENSINO</Text>
                   </View>
@@ -65,13 +68,13 @@ export function HomePage (props: HomePageProps) {
               </View>
 
               <View style={styles.row}>
-                <TouchableHighlight style={styles.button1} onPress={() => Alert.alert("Botão acionado")}>
+                <TouchableHighlight style={styles.button1} onPress={() => {router.push('/tela3/')}}>
                   <View>
                     <Text style={styles.TextButtons}>ESCRITÓRIO</Text>
                   </View>
                </TouchableHighlight>
 
-                <TouchableHighlight style={styles.button1} onPress={() => Alert.alert("Botão acionado")}>
+                <TouchableHighlight style={styles.button1} onPress={() => {router.push('/tela3/')}}>
                   <View>
                     <Text style={styles.TextButtons}>FÁBRICA</Text>
                  </View>
@@ -79,13 +82,13 @@ export function HomePage (props: HomePageProps) {
               </View>
 
               <View style={styles.row}>
-                <TouchableHighlight style={styles.button1} onPress={() => Alert.alert("Botão acionado")}>
+                <TouchableHighlight style={styles.button1} onPress={() => {router.push('/tela3/')}}>
                   <View>
                     <Text style={styles.TextButtons}>CONDOMÍNIO</Text>
                   </View>
                 </TouchableHighlight>
 
-                <TouchableHighlight style={styles.button1} onPress={() => Alert.alert("Botão acionado")}>
+                <TouchableHighlight style={styles.button1} onPress={() => {router.push('/tela3/')}}>
                   <View>
                     <Text style={styles.TextButtons}>OUTROS</Text>
                   </View>

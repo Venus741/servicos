@@ -1,18 +1,14 @@
 import * as React from 'react';
-import { View, TextInput, Text, TouchableOpacity, Alert, Image } from 'react-native';
+import { View, TextInput, Text, TouchableOpacity, Image } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import styles from './styles';
 import { useState } from 'react';
+import { router } from 'expo-router';
 
+export default function LoginPage() {
 
-export interface LoginPageProps {
-}
-
-export function LoginPage (props: LoginPageProps) {
-
-    const [password, setInput] = React.useState('');
+    const [password, setInput] = useState('');
     const [hidePass, setHidePass] = useState(true);
-
 
     return (
         <View style={styles.principal_container}>
@@ -38,7 +34,7 @@ export function LoginPage (props: LoginPageProps) {
 
                 </View>
 
-                <TouchableOpacity style={styles.enter_button} onPress={() => Alert.alert("Botão acionado")}>
+                <TouchableOpacity style={styles.enter_button} onPress={() => {router.push('/tela2')}}>
                     <Text style={styles.text_button}>Entrar</Text>
                 </TouchableOpacity>
             </View>

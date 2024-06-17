@@ -72,17 +72,19 @@ const styles = StyleSheet.create({
     },
     enter_button: {
         backgroundColor: "white",
-        textAlign: "center",
+        justifyContent: "center",
         alignItems: "center",
         width: "50%",
-        height: "5%",
+        height: "8%",
         margin: 20,
         marginLeft: 90,
-        padding: 4
+        padding: 4,
+        borderRadius: 4,
     },
     text_button: {
         color: "black",
         fontWeight: "bold",
+        fontSize: 15,
     }
 
 })
