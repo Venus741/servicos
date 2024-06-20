@@ -42,8 +42,8 @@ const ServicePage: React.FC = () => {
 
         <Text style={styles.title}>Seleção de serviços</Text>
         
-        <TouchableOpacity style={styles.extreme_buttons}>
-          <Text style={styles.extreme_buttons_title}>Avançar</Text>
+        <TouchableOpacity style={styles.extreme_buttons} onPress={() => router.push('/tela4')}>
+          <Text style={styles.extreme_buttons_title}>Pagar</Text>
         </TouchableOpacity>
       </View>
 

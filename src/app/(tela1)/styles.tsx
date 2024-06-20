@@ -79,7 +79,7 @@ const styles = StyleSheet.create({
         margin: 20,
         marginLeft: 90,
         padding: 4,
-        borderRadius: 4,
+        borderRadius: 8,
     },
     text_button: {
         color: "black",

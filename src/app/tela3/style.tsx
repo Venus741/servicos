@@ -32,7 +32,7 @@ export default StyleSheet.create({
 
       extreme_buttons: {
         justifyContent: "center",
-        marginTop: 18
+        marginTop: 18,
       },
 
       scrollViewContent: {
