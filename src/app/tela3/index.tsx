@@ -5,22 +5,22 @@ import { router } from 'expo-router';
 
 const ServicePage: React.FC = () => {
   const services: string[] = [
-    "combate a baratas e escorpiões",
-    "combate a roedores",
-    "combate a mosquitos",
-    "combate a cupins",
-    "combate a formigas",
-    "limpeza de caixa d'água e sisternas",
-    "limpeza de caixa de gordura",
-    "manutenção de ar condicionado",
-    "limpeza de fachada",
-    "pintura",
-    "hidráulica",
-    "eletrica",
-    "serralharia",
-    "câmera de segurança",
-    "cerca elétrica",
-    "alarme"
+    "Combate a baratas e escorpiões R$ 80",
+    "Combate a roedores R$ 70",
+    "Combate a mosquitos R$ 100",
+    "Combate a cupins R$ 150",
+    "Combate a formigas R$ 80",
+    "Limpeza de caixa d'água e sisternas R$ 200",
+    "Limpeza de caixa de gordura R$ 150",
+    "Manutenção de ar condicionado R$ 200",
+    "Limpeza de fachada R$ 1000 p/ fachada ",
+    "Pintura R$ 300 p/ comodo",
+    "Hidráulica R$ 350",
+    "Eletrica R$ 500",
+    "Serralharia 300",
+    "Câmera de segurança R$ 90 p/ ponto",
+    "Cerca elétrica R$ 50 p/ metro",
+    "Alarme R$ 300"
   ];
 
   const [selectedServices, setSelectedServices] = useState<string[]>([]);
@@ -42,7 +42,7 @@ const ServicePage: React.FC = () => {
 
         <Text style={styles.title}>Seleção de serviços</Text>
         
-        <TouchableOpacity style={styles.extreme_buttons} onPress={() => router.push('/tela4')}>
+        <TouchableOpacity style={styles.extreme_buttons} onPress={() => router.push('/tela7')}>
           <Text style={styles.extreme_buttons_title}>Pagar</Text>
         </TouchableOpacity>
       </View>

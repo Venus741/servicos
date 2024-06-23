@@ -8,7 +8,7 @@ export default StyleSheet.create({
       },
 
       container_title: {
-        backgroundColor: "#FFFF00",
+        backgroundColor: "#1E90FF",
         height: 100,
         width: "100%",
         flexDirection: "row",
@@ -20,7 +20,7 @@ export default StyleSheet.create({
 
       title: {
         fontSize: 18,
-        color: "black",
+        color: "white",
         marginTop: 20,
         fontWeight: 'bold',
       },
@@ -28,6 +28,7 @@ export default StyleSheet.create({
       extreme_buttons_title: {
         fontSize: 18,
         fontWeight: "bold",
+        color: "white",
       },
 
       extreme_buttons: {

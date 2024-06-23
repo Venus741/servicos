@@ -14,8 +14,6 @@ export default StyleSheet.create({
         alignItems: "center",
         justifyContent: "center",
         flexDirection: "row"
-
-
         
     },
 
@@ -24,10 +22,9 @@ export default StyleSheet.create({
         height: 30,
         justifyContent: "center",
 
-
     },
 
-    title_bar: {
+    title_container: {
         width: "60%",
         height: 30,
         justifyContent: "center",
@@ -35,18 +32,22 @@ export default StyleSheet.create({
         fontSize: 18,
         fontWeight: "bold",
         color: "white",
-
     },
 
+    title: {
+        color: "white",
+        fontSize: 19,
+    },
+
+
     text_button_back: {
-        fontSize: 18,
-        fontWeight: "bold",
+        fontSize: 19,
         paddingLeft: 18,
         color: "white"
     },
 
     image_container: {
-        height: 150,
+        height: 80,
         width: 100,
         justifyContent: "center",
         alignItems: "center",
@@ -62,80 +63,71 @@ export default StyleSheet.create({
     main_container: {
         width: "100%",
         height: 690,
-        justifyContent: "flex-start",
+        justifyContent: "center",
         alignItems: "center",
         backgroundColor: "white",
-        marginTop: 100
-    },
-
-    card_info: {
-        backgroundColor: "cyan ",
-        width: "90%",
-        height: 70,
-        justifyContent: "space-around",
-        flexDirection: "row",
         
     },
-
-    date: {
-        height: 40,
-        width: "30%",
-        backgroundColor: "#c4c4c4",
-        padding: 6,
-        borderRadius: 4,
-
-    },
-
-    cvv: {
-        height: 40,
-        width: "30%",
-        backgroundColor: "#c4c4c4",
-        padding: 6,
-        borderRadius: 4,
-    },
-
-    container_card_number: {
+    enter_containers: {
+        justifyContent: "center",
         width: "90%",
-        height: 40,
-        alignItems: "center"
+        height: "70%",
+        padding: 5
 
     },
 
-    card_number: {
-        width: "80%",
-        height: 40,
+    input_container: {
+        padding: 7
+    },
+
+    input: {
         backgroundColor: "#c4c4c4",
-        padding: 6,
-        borderRadius: 4,
+        width: "100%",
+        height: 70,
+        fontSize: 18,
+        borderRadius: 7,
+        padding: 10
+    },
+
+    num_container: {
+        padding: 7,
+    },
+
+    num_input: {
+        backgroundColor: "#c4c4c4",
+        borderRadius: 7,
+        height: 70,
+        fontSize: 18,
 
     },
 
-    container_credit_debit: {
-        width: "90%",
-        height: 20,
+    complement_container: {
+        backgroundColor: "#c4c4c4",
+        borderRadius: 7,
+        width: "98%",
     },
 
-    confirm_container: {
-        width: "90%",
-        height: 40,
-        alignItems: "center",
-        margin: 20
+    complement_input: {
+        height: 70,
+        fontSize: 15,
+
     },
 
-    confirm_button: {
-        width: "60%",
-        height: 40,
+    button: {
         backgroundColor: "#1E90FF",
+        width: "80%",
+        height: "7%",
         alignItems: "center",
         justifyContent: "center",
-        borderRadius: 8,
+        borderRadius: 7,
+
     },
 
-    text_button_confirm: {
-        fontSize: 15,
+    text_button: {
         color: "white",
+        fontSize: 15,
 
+    },
+    
 
-    }
-
-    });
+});

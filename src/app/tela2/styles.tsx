@@ -14,7 +14,7 @@ export default StyleSheet.create({
         flexDirection: "row",
         alignItems: "center",
         justifyContent: "flex-start",
-        backgroundColor: "#FFFF00",
+        backgroundColor: "#1E90FF",
         padding: 15,
         marginTop: 30,
         
@@ -29,7 +29,8 @@ export default StyleSheet.create({
     },
 
     userName: {
-        fontSize: 20
+        fontSize: 20,
+        color: "white"
     },
     
     options_service: {
