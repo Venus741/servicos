@@ -85,7 +85,19 @@ const styles = StyleSheet.create({
         color: "black",
         fontWeight: "bold",
         fontSize: 15,
-    }
+    },
+
+    register_button: {
+        justifyContent: "center",
+        alignItems: "center",
+        width: "60%",
+        height: "8%",
+        marginLeft: 70
+    },
+
+    register_text: {
+        color: "white",
+    },
 
 })
 export default styles;
